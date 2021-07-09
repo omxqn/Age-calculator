@@ -11,6 +11,9 @@ sec_now = datetime.datetime.now().second
 while True:
     try:
         user_input = input("Birth date (DD MM YYYY or DD-MM-YY): ")
+        
+        #-------------------------------------------
+        # convert user inputs to days
         try:
             age_year = (int(user_input.split(" ")[2]) * 12) * 30
             age_month = (int(user_input.split(" ")[1])) * 30
@@ -23,8 +26,7 @@ while True:
         break
     except Exception as es:
         print("Please enter only numbers ")
-#-------------------------------------------
-# convert user inputs to days
+
 
 #-------------------------------------------
 # convert current date to days
